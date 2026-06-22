@@ -1,93 +1,113 @@
-/* 🌸 Desejo de Menina - Tema Vermelho Romântico */
+/* 🌸 Desejos de uma Menina - CSS Atualizado */
 
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
-  background: linear-gradient(135deg, #ffe6e6, #ff1a1a);
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #ffe0e0, #ff4d4d, #b30000);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-/* Caixa principal */
+/* Card principal */
 .container {
-  background: #fff;
-  width: 400px;
-  padding: 25px;
-  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  width: 420px;
+  padding: 30px;
+  border-radius: 25px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(255, 0, 0, 0.3);
-  border: 3px solid #ff1a1a;
+  box-shadow: 0 15px 35px rgba(255, 0, 0, 0.3);
+  border: 2px solid #ff1a1a;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
 }
 
 /* Título */
 h1 {
-  color: #cc0000;
-  font-size: 26px;
+  color: #b30000;
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.2);
 }
 
 /* Texto */
 p {
   color: #660000;
   font-size: 15px;
+  margin-bottom: 15px;
 }
 
-/* Campo de texto */
+/* Input */
 input {
   width: 85%;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 12px;
+  border-radius: 12px;
   border: 2px solid #ff1a1a;
-  margin-top: 10px;
   outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #b30000;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.4);
 }
 
 /* Botão */
 button {
   margin-top: 10px;
-  padding: 10px 18px;
-  background: #ff1a1a;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #ff1a1a, #b30000);
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
   font-weight: bold;
   transition: 0.3s;
 }
 
 button:hover {
-  background: #b30000;
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #cc0000, #800000);
 }
 
-/* Lista de desejos */
+/* Lista */
 ul {
   list-style: none;
   padding: 0;
   margin-top: 20px;
-  text-align: left;
 }
 
-/* Cada desejo */
+/* Itens */
 li {
   background: #ffe6e6;
-  margin: 6px 0;
-  padding: 10px;
-  border-radius: 10px;
-  border-left: 5px solid #ff1a1a;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 12px;
+  border-left: 6px solid #ff1a1a;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.3s;
 }
 
-/* Botão de remover */
+li:hover {
+  transform: scale(1.02);
+}
+
+/* Botão remover */
 .remove {
   background: #cc0000;
   color: white;
   border: none;
-  padding: 4px 8px;
-  border-radius: 5px;
+  padding: 5px 10px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .remove:hover {
