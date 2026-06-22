@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Desejos de uma Menina</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ffd6e7, #d6f3ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: white;
+      width: 500px;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    h1 {
+      color: #d63384;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      font-size: 15px;
+    }
+
+    input {
+      width: 80%;
+      padding: 10px;
+      margin-top: 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background: #ff69b4;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #ff4fa3;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    li {
+      background: #f8f8f8;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .remove {
+      background: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 3px 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>✨ Desejos de uma Menina ✨</h1>
+    <p>Escreva aqui seus sonhos, metas e desejos para o futuro.</p>
+
+    <input type="text" id="desejo" placeholder="Digite um desejo...">
+    <br>
+    <button onclick="adicionarDesejo()">Adicionar</button>
+
+    <ul id="lista"></ul>
+  </div>
+
+  <script>
+    function adicionarDesejo() {
+      let input = document.getElementById("desejo");
+      let texto = input.value.trim();
+
+      if (texto === "") return;
+
+      let li = document.createElement("li");
+      li.innerHTML = texto + ' <button class="remove" onclick="this.parentElement.remove()">X</button>';
+
+      document.getElementById("lista").appendChild(li);
+
+      input.value = "";
+    }
+  </script>
+
+</body>
+</html>
