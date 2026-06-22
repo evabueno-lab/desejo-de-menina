@@ -1,78 +1,73 @@
-/* 🌸 Desejos de uma Menina */
+/* 🌸 Desejos de uma Menina - Estilo Aesthetic */
 
 body {
   margin: 0;
-  font-family: "Poppins", Arial, sans-serif;
-  background: linear-gradient(135deg, #ffe0e0, #ff4d4d, #b30000);
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(120deg, #fff0f0, #ffb3b3, #ff4d4d);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
-/* Card principal */
+/* Caixa principal */
 .container {
-  background: rgba(255, 255, 255, 0.95);
-  width: 420px;
-  padding: 30px;
-  border-radius: 25px;
+  background: #ffffff;
+  width: 380px;
+  padding: 28px;
+  border-radius: 30px;
   text-align: center;
-  box-shadow: 0 15px 35px rgba(255, 0, 0, 0.3);
-  border: 2px solid #ff1a1a;
-  backdrop-filter: blur(8px);
-  transition: transform 0.3s ease;
-}
-
-.container:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(255, 0, 0, 0.25);
+  border: 1px solid #ff6666;
 }
 
 /* Título */
 h1 {
-  color: #b30000;
-  font-size: 28px;
+  color: #cc0000;
+  font-size: 26px;
   margin-bottom: 10px;
-  text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.2);
+  letter-spacing: 1px;
 }
 
 /* Texto */
 p {
-  color: #660000;
-  font-size: 15px;
+  color: #7a0000;
+  font-size: 14px;
   margin-bottom: 15px;
 }
 
 /* Input */
 input {
   width: 85%;
-  padding: 12px;
-  border-radius: 12px;
-  border: 2px solid #ff1a1a;
+  padding: 11px;
+  border-radius: 20px;
+  border: 2px solid #ff6666;
   outline: none;
+  text-align: center;
   transition: 0.3s;
 }
 
 input:focus {
-  border-color: #b30000;
-  box-shadow: 0 0 8px rgba(255, 0, 0, 0.4);
+  border-color: #cc0000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
 }
 
 /* Botão */
 button {
-  margin-top: 10px;
-  padding: 12px 20px;
-  background: linear-gradient(135deg, #ff1a1a, #b30000);
-  color: white;
+  margin-top: 12px;
+  padding: 10px 22px;
   border: none;
-  border-radius: 12px;
-  cursor: pointer;
+  border-radius: 20px;
+  background: #ff1a1a;
+  color: white;
   font-weight: bold;
+  cursor: pointer;
   transition: 0.3s;
 }
 
 button:hover {
+  background: #b30000;
   transform: scale(1.05);
-  background: linear-gradient(135deg, #cc0000, #800000);
 }
 
 /* Lista */
@@ -87,8 +82,8 @@ li {
   background: #ffe6e6;
   margin: 8px 0;
   padding: 12px;
-  border-radius: 12px;
-  border-left: 6px solid #ff1a1a;
+  border-radius: 20px;
+  border: 1px solid #ff9999;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,20 +91,21 @@ li {
 }
 
 li:hover {
-  transform: scale(1.02);
+  transform: translateX(5px);
 }
 
 /* Botão remover */
 .remove {
-  background: #cc0000;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 6px;
+  background: transparent;
+  color: #cc0000;
+  border: 1px solid #cc0000;
+  padding: 4px 10px;
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .remove:hover {
-  background: #800000;
+  background: #cc0000;
+  color: white;
 }
